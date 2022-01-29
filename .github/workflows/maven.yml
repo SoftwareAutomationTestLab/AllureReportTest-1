@@ -23,7 +23,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn clean test
+      run: mvn package
     - name: Test marketplace action
       uses: simple-elf/allure-report-action@master
       if: always()
